@@ -1,0 +1,50 @@
+global-style:
+  version: Version
+  css:
+    theme:
+      https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css: { type: external }
+      css/header_section/header.css : {}
+      css/header_section/sidebar.css: {}
+      css/hero_section/hero_section.css: {}
+  js:
+    js/sidebar.js : {}
+    js/sidebar_navigation.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery
+
+
+slick:
+  css:
+    theme:
+      https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css: {type: external}
+      https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css: {type: external}
+  js:
+    https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js: {type: external}
+  dependencies:
+    - core/jquery
+    - core/drupal
+
+
+# Fancybox Implemented
+fancybox:
+  css:
+    theme:
+      https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css: {type: external}
+  js:
+    https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js: {type: external}
+  dependencies:
+    - core/jquery
+    - core/drupal
+
+
+# Gallery Section 
+gallery_section:
+  css:
+    theme:
+      css/gallery_section/gallery_section.css: {}
+  js:
+    js/gallery_section/gallery_section.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal

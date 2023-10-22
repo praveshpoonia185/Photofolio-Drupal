@@ -1,0 +1,140 @@
+* {
+  font-family: "Inter", sans-serif;
+  text-decoration: none;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+/* body {
+  background-color: #000;
+} */
+
+.header {
+  padding: 30px 0;
+  background-color: #000;
+}
+
+.header-wrapper .region-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-wrapper .region-header #block-photofolio-site-branding .site-name a {
+  font-size: 2rem;
+  margin: 0;
+  font-weight: 400;
+  color: #fff;
+  font-family: "Cardo", sans-serif;
+}
+
+.header-wrapper .region-header #block-photofolio-site-branding .site-name a i {
+  color: #27a776;
+}
+
+.header-wrapper .region-header .menu {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.header-wrapper .region-header .menu .menu-item {
+  list-style-type: none;
+  position: relative;
+  padding: 1rem 0;
+}
+
+.header-wrapper .region-header .menu .menu-item a {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.header-wrapper .region-header .menu .menu-item a:hover {
+  color: #fff;
+}
+
+
+.header-wrapper .region-header .menu .menu-item .is-active {
+  color: #fff !important;
+}
+
+
+.header-wrapper .region-header .header_socialmedia_links__menu {
+  display: flex;
+  gap: 1rem;
+}
+
+.header-wrapper .region-header .header_socialmedia_links__menu li {
+  list-style-type: none;
+}
+
+.header-wrapper .region-header .header_socialmedia_links__menu li a {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1rem;
+  line-height: 0px;
+  transition: 0.3s;
+}
+
+/* EXPANDED MENU CSS */
+
+.sub_menu {
+  position: absolute;
+  top: 50px;
+  flex-direction: column;
+  align-items: self-start !important;
+  margin-left: 0;
+  left: -14px;
+  gap: unset !important;
+  padding: 10px 0;
+  z-index: 99;
+  background: #161718;
+  transition: 0.3s;
+  border-radius: 4px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.sub_menu li {
+  padding: unset !important;
+}
+
+.sub_menu li a {
+  padding: 10px 20px;
+  font-size: 15px !important;
+  text-transform: none !important;
+  width: 200px !important;
+  display: block;
+  font-weight: 400 !important;
+}
+
+.sub_menu li .sub_menu {
+  left: 100%;
+  top: 0;
+}
+
+.menu li:hover>.sub_menu {
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.sub_menu li:hover>.sub_menu {
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+
+.page-wrapper *:focus {
+  outline: unset !important;
+  box-shadow: unset !important;
+}
+
+ul.menu a.is-active {
+  color: transparent !important;
+}
